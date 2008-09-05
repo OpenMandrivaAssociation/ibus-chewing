@@ -14,6 +14,7 @@ Source0:   %{name}-%{snapdate}.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: libchewing-devel
 BuildRequires: python-devel
+BuildRequires: gettext-devel
 BuildRequires: swig
 Requires:	ibus
 Requires:	libchewing-data
