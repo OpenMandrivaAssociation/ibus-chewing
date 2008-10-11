@@ -1,5 +1,4 @@
-%define snapdate 20080905
-%define	version 0.1.1.%{snapdate}
+%define	version 0.1.1.20080917
 %define	release %mkrel 1
 
 Name:      ibus-chewing
@@ -9,8 +8,7 @@ Release:   %{release}
 Group:     System/Internationalization
 License:   GPLv2+
 URL:       http://code.google.com/p/ibus/
-# fwang: generated from libchewing_svn branch
-Source0:   %{name}-%{snapdate}.tar.gz
+Source0:   http://ibus.googlecode.com/files/%name-%version.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: libchewing-devel
 BuildRequires: python-devel
@@ -23,10 +21,9 @@ Requires:	libchewing-data
 ibus - Chinese chewing engine.
 
 %prep
-%setup -q -n %{name}-%{snapdate}
+%setup -q
 
 %build
-./autogen.sh
 %configure2_5x
 %make
 
