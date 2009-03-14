@@ -11,6 +11,8 @@ URL:       http://code.google.com/p/ibus/
 Source0:   http://ibus.googlecode.com/files/%name-%version-Source.tar.gz
 Patch0:	   ibus-chewing-1.0.3-fix-build.patch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires: libxtst-devel
+BuildRequires: libx11-devel
 BuildRequires: libchewing-devel
 BuildRequires: ibus-devel >= 1.1.0
 BuildRequires: libGConf2-devel
