@@ -1,4 +1,4 @@
-%define	version 1.0.2.20090302
+%define	version 1.0.3.20090311
 %define	release %mkrel 1
 
 Name:      ibus-chewing
@@ -9,7 +9,7 @@ Group:     System/Internationalization
 License:   GPLv2+
 URL:       http://code.google.com/p/ibus/
 Source0:   http://ibus.googlecode.com/files/%name-%version-Source.tar.gz
-Patch0:	   ibus-chewing-1.0.2-fix-build.patch
+Patch0:	   ibus-chewing-1.0.3-fix-build.patch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: libchewing-devel
 BuildRequires: ibus-devel >= 1.1.0
@@ -44,7 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %name.lang
 %defattr(-,root,root)
-%{_sysconfdir}/gconf/schemas/ibus-chewing.schema
+%{_sysconfdir}/gconf/schemas/*.schemas
 %{_libexecdir}/ibus-engine-*
 %{_datadir}/%name
 %{_datadir}/ibus/component/*.xml
