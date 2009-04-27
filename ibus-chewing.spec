@@ -1,4 +1,4 @@
-%define	version 1.0.3.20090311
+%define	version 1.0.8.20090424
 %define	release %mkrel 1
 
 Name:      ibus-chewing
@@ -9,12 +9,13 @@ Group:     System/Internationalization
 License:   GPLv2+
 URL:       http://code.google.com/p/ibus/
 Source0:   http://ibus.googlecode.com/files/%name-%version-Source.tar.gz
-Patch0:	   ibus-chewing-1.0.3-fix-build.patch
+Patch0:	   ibus-chewing-1.0.8-fix-build.patch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: libxtst-devel
 BuildRequires: libx11-devel
 BuildRequires: libchewing-devel
 BuildRequires: ibus-devel >= 1.1.0
+BuildRequires: gtk2-devel
 BuildRequires: libGConf2-devel
 BuildRequires: gettext
 BuildRequires: gob2
@@ -27,10 +28,10 @@ ibus - Chinese chewing engine.
 
 %prep
 %setup -q -n %name-%version-Source
-%patch0 -p0
+%patch0 -p0 -b .orig
 
 %build
-%cmake
+%cmake -DLIBEXEC_DIR="%{_libdir}"
 %make
 
 %install
