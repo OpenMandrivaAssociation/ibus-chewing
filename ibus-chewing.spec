@@ -1,4 +1,4 @@
-%define	version 1.0.8.20090424
+%define	version 1.0.8.20090428
 %define	release %mkrel 1
 
 Name:      ibus-chewing
@@ -16,7 +16,6 @@ BuildRequires: libx11-devel
 BuildRequires: libchewing-devel
 BuildRequires: ibus-devel >= 1.1.0
 BuildRequires: gtk2-devel
-BuildRequires: libGConf2-devel
 BuildRequires: gettext
 BuildRequires: gob2
 BuildRequires: cmake
@@ -28,7 +27,7 @@ ibus - Chinese chewing engine.
 
 %prep
 %setup -q -n %name-%version-Source
-%patch0 -p0 -b .orig
+#patch0 -p0 -b .orig
 
 %build
 %cmake -DLIBEXEC_DIR="%{_libdir}"
