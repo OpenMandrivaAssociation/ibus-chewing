@@ -1,4 +1,4 @@
-%define	version 1.0.10.20090523
+%define	version 1.2.0.20090624
 %define	release %mkrel 1
 
 Name:      ibus-chewing
@@ -13,12 +13,12 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: libxtst-devel
 BuildRequires: libx11-devel
 BuildRequires: libchewing-devel
-BuildRequires: ibus-devel >= 1.1.0
+BuildRequires: ibus-devel >= 1.2.0
 BuildRequires: gtk2-devel
 BuildRequires: gettext
 BuildRequires: gob2
 BuildRequires: cmake
-Requires:	ibus >= 1.1.0
+Requires:	ibus >= 1.2.0
 Requires:	libchewing-data
 
 %description
