@@ -1,4 +1,4 @@
-%define	version 1.2.99.20100215
+%define	version 1.2.99.20100317
 %define	release %mkrel 1
 
 Name:      ibus-chewing
