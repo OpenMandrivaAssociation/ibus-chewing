@@ -1,5 +1,5 @@
 %define	version 1.2.99.20100317
-%define	release %mkrel 1
+%define	release %mkrel 2
 
 Name:      ibus-chewing
 Summary:   ibus - Chinese chewing engine
@@ -18,7 +18,7 @@ BuildRequires: gtk2-devel
 BuildRequires: gettext
 BuildRequires: gob2
 BuildRequires: cmake
-Requires:	ibus >= 1.2.0
+Requires:	ibus >= 1.3.0
 Requires:	libchewing-data
 
 %description
