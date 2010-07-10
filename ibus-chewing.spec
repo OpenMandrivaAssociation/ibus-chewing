@@ -1,5 +1,5 @@
-%define	version 1.2.99.20100317
-%define	release %mkrel 2
+%define	version 1.3.5.20100706
+%define	release %mkrel 1
 
 Name:      ibus-chewing
 Summary:   ibus - Chinese chewing engine
