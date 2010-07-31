@@ -1,4 +1,4 @@
-%define	version 1.3.5.20100706
+%define	version 1.3.6.20100730
 %define	release %mkrel 1
 
 Name:      ibus-chewing
@@ -28,7 +28,7 @@ ibus - Chinese chewing engine.
 %setup -q -n %name-%version-Source
 
 %build
-%cmake -DLIBEXEC_DIR="%{_libdir}"
+%cmake -DLIBEXEC_DIR="%{_libexecdir}"
 %make
 
 %install
