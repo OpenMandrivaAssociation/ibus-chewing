@@ -1,5 +1,5 @@
 %define	version 1.3.9.2
-%define	release %mkrel 1
+%define	release %mkrel 2
 
 Name:      ibus-chewing
 Summary:   ibus - Chinese chewing engine
@@ -14,13 +14,14 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: libxtst-devel
 BuildRequires: libx11-devel
 BuildRequires: libchewing-devel
-BuildRequires: ibus-devel >= 1.2.0
+BuildRequires: ibus-devel >= 1.3.9-5
 BuildRequires: gtk2-devel
 BuildRequires: gettext
 BuildRequires: gob2
 BuildRequires: cmake
 Requires:	ibus >= 1.3.0
 Requires:	libchewing-data
+Requires(post,preun): GConf2
 
 %description
 ibus - Chinese chewing engine.
@@ -44,8 +45,12 @@ rm -fr %buildroot%_datadir/doc
 %clean
 rm -rf $RPM_BUILD_ROOT
 
+%post
+%post_ibus_register_engine chewing zh_TW
+
 %preun
 %preun_uninstall_gconf_schemas %name
+%preun_ibus_unregister_engine chewing
 
 %files -f %name.lang
 %defattr(-,root,root)
