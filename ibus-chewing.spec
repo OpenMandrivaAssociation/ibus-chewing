@@ -18,10 +18,12 @@ BuildRequires: ibus-devel >= 1.3.9-5
 BuildRequires: gtk2-devel
 BuildRequires: gettext
 BuildRequires: gob2
+BuildRequires: GConf2
 BuildRequires: cmake
 Requires:	ibus >= 1.3.0
 Requires:	libchewing-data
-Requires(post,preun): GConf2
+Requires(post): GConf2
+Requires(preun): GConf2
 
 %description
 ibus - Chinese chewing engine.
