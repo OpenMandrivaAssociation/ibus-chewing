@@ -37,7 +37,7 @@ ibus - Chinese chewing engine.
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 %makeinstall_std -C build
 
 rm -fr %buildroot%_datadir/doc
@@ -45,7 +45,7 @@ rm -fr %buildroot%_datadir/doc
 %find_lang %name
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %post
 %post_ibus_register_engine chewing zh_TW
