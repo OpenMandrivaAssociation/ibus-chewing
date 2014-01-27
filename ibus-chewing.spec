@@ -12,6 +12,7 @@ BuildRequires:	GConf2
 BuildRequires:	gettext
 BuildRequires:	gob2
 BuildRequires:	pkgconfig(chewing)
+BuildRequires:	pkgconfig(gconf-2.0)
 BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	pkgconfig(ibus-1.0)
 BuildRequires:	pkgconfig(x11)
