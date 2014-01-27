@@ -1,4 +1,3 @@
----
 sources:
-  cmake-fedora-modules-only-latest.tar.gz: 7fdf77a5fb6cc870fbcca8e3dffbffd043ee4d69
-  ibus-chewing-1.4.3-Source.tar.gz: 82ec86daf2b7f3de88410ec01c9f41db0184f91e
+  cmake-fedora-modules-only-latest.tar.gz: 12c086dda2fab7bf0d1d5381ce5f9a66a2ae1da2
+  ibus-chewing-1.4.7-Source.tar.gz: 9e2a9792db374be2575f5dd6998755a699d9011d
