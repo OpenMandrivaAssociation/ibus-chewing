@@ -1,7 +1,7 @@
 Summary:	ibus - Chinese chewing engine
 Name:		ibus-chewing
 Version:	1.4.7
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		System/Internationalization
 Url:		http://code.google.com/p/ibus/
