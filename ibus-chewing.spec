@@ -4,7 +4,7 @@ Version:	1.4.7
 Release:	2
 License:	GPLv2+
 Group:		System/Internationalization
-Url:		http://code.google.com/p/ibus/
+Url:		https://code.google.com/p/ibus/
 Source0:	http://ibus.googlecode.com/files/%{name}-%{version}-Source.tar.gz
 Source1:	https://fedorahosted.org/releases/c/m/cmake-fedora/cmake-fedora-modules-only-latest.tar.gz
 BuildRequires:	cmake
